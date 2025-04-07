@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submit Example</title>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevents page refresh
+            var firstName = document.getElementById("fname").value;
+            var lastName = document.getElementById("lname").value;
+            console.log("First Name: " + firstName);
+            console.log("Last Name: " + lastName);
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter Your Name</h2>
+    <form >
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <input type="submit" value="Submit" onclick="handleSubmit(event)">
+    </form>
+</body>
+</html>
