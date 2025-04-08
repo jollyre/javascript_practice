@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="h1tag">Hello, change my text</h1>
+    <button id="btn1">Click Here</button>
+
+    <h1 id="h2tag">Hello, change my color</h1>
+    <button id="btn2">Click Here</button>
+
+    <script>
+        var h1tag = document.getElementById("h1tag")
+        var btn1 = document.getElementById("btn1")
+        btn1.addEventListener("click", () => {
+            h1tag.textContent = "I am chnaged";
+        })
+
+        var h2tag = document.getElementById("h2tag")
+        var btn2 = document.getElementById("btn2")
+        btn2.addEventListener("click", () => {
+            h2tag.style.color = "red";
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Demo on confirm function</h2>
+
+    <button onclick="confirmfun()">delete product</button>
+
+    <script>
+       function confirmfun(){
+        if(confirm('are u sure want to delete')){
+            alert("Product Deleted Successfully!!!!!")
+            document.write("Product deleted")
+        }else{
+            alert("You have cancelled Product Delition Activity")
+        }
+       }
+       </script>
+
+       <button onclick="checkActiveOrNot()">CheckISActive</button>
+
+       <script>
+        function checkActiveOrNot(){
+            let value = confirm('to check what is return')
+           if(value){
+            document.write(value)
+           }
+           else{
+            document.write(value)
+           }
+        }
+
+        </script>
+ 
+</body>
+</html>

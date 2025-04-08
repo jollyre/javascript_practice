@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Print the Document</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque saepe ex quidem et commodi magni, architecto fugit minima! Iure, dolore at!</p>
+
+      <button onclick="print()">Print</button>
+
+      <button onclick="openWin()">Open window</button>
+
+
+      <script>
+        function openWin(){
+            window.open("https://www.google.com/", "_target", "width=400" , "height=400")
+        }
+// Creating a new paragraph element
+let newEle = document.createElement("button");
+
+// Adding text to the paragraph
+newEle.append("Hello, this is a paragraph");
+
+// Appending the new paragraph to the body (or any other element)
+document.body.appendChild(newEle);
+
+      
+      </script>
+</body>
+</html>
